@@ -20,6 +20,7 @@ function p = predict(Theta1, Theta2, X)
 %       information see 'help max'. If your examples are in rows, then, you
 %       can use max(A, [], 2) to obtain the max for each row.
 %
+size(X)
     X=[ones(size(X,1),1) X];
     a2=sigmoid(X*Theta1');
     a2=[ones(size(a2,1),1) a2];

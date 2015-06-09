@@ -36,6 +36,8 @@ fprintf('Loading and Visualizing Data ...\n')
 load('ex3data1.mat');
 m = size(X, 1);
 
+
+
 % Randomly select 100 data points to display
 sel = randperm(size(X, 1));
 sel = sel(1:100);
@@ -69,18 +71,16 @@ pause;
 
 %  To give you an idea of the network's output, you can also run
 %  through the examples one at the a time to see what it is predicting.
-
-%  Randomly permute examples
 rp = randperm(m);
 
 for i = 1:m
     % Display 
     fprintf('\nDisplaying Example Image\n');
     displayData(X(rp(i), :));
-
+		   size(X(rp(i),:))
     pred = predict(Theta1, Theta2, X(rp(i),:));
     fprintf('\nNeural Network Prediction: %d (digit %d)\n', pred, mod(pred, 10));
-    
+            
     % Pause
     fprintf('Program paused. Press enter to continue.\n');
     pause;
