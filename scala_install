@@ -1,0 +1,16 @@
+          # tar -zxf  scala-2.9.0.1.tgz
+
+ 
+          # mkdir /usr/share/scala
+
+ 
+
+          # cd scala-2.9.0.1
+
+          # mv * /usr/share/scala
+
+ 
+
+          # ln -s /usr/share/scala/bin/scala /usr/bin/scala 
+
+          # ln -s /usr/share/scala/bin/scalac /usr/bin/scalac     
